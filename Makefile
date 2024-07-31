@@ -5,7 +5,7 @@ C_OBJECTS   = $(patsubst $(SOURCE_DIR)/%.c, $(BUILD_DIR)/%.o, $(C_SOURCES))
 
 OBJECTS = $(C_OBJECTS)
 ENAME   = ClassiCube
-CFLAGS  = -g -pipe -fno-math-errno -Werror -Wno-error=missing-braces -Wno-error=strict-aliasing -Wno-error=maybe-uninitialized
+CFLAGS  = -g -pipe -O3 -march=x86-64 -fno-math-errno -Werror -Wno-error=missing-braces -Wno-error=strict-aliasing -Werror=uninitialized
 LDFLAGS = -g -rdynamic
 
 ifndef RM
