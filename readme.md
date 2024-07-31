@@ -136,11 +136,11 @@ Compiling with TCC:
 
 ## Compiling - Linux
 
-##### Using gcc/clang
+##### Using clang
 
 Install appropriate libs as required. For ubuntu these are: libx11-dev, libxi-dev and libgl1-mesa-dev
 
-```gcc -fno-math-errno src/*.c -o ClassiCube -rdynamic -lpthread -lX11 -lXi -lGL -ldl```
+```clang -fno-math-errno src/*.c -o ClassiCube -rdynamic -lpthread -lX11 -lXi -lGL -ldl```
 
 ##### Cross compiling for Windows (32 bit):
 
@@ -153,7 +153,7 @@ Install appropriate libs as required. For ubuntu these are: libx11-dev, libxi-de
 ##### Raspberry Pi
 Although the regular linux compiliation flags will work fine, to take full advantage of the hardware:
 
-```gcc -fno-math-errno src/*.c -o ClassiCube -DCC_BUILD_RPI -rdynamic -lpthread -lX11 -lXi -lEGL -lGLESv2 -ldl```
+```clang -fno-math-errno src/*.c -o ClassiCube -DCC_BUILD_RPI -rdynamic -lpthread -lX11 -lXi -lEGL -lGLESv2 -ldl```
 
 ## Compiling - macOS
 
