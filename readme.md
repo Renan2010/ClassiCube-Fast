@@ -16,6 +16,7 @@ This is a classicube compiled with clang and with aggressive game optimizations 
   ```bash
    $ CC=clang make -j $(nproc)
   ```
+**And enjoy :)**
 # FAQ
 **What is "$(nproc)"?**
 
@@ -24,6 +25,3 @@ This is a classicube compiled with clang and with aggressive game optimizations 
   $ echo $(nproc) # Output the total number of cores in the machine
   Output: 4
   ```
-
-
-**And enjoy :)**
