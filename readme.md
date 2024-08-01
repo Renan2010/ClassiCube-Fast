@@ -16,4 +16,14 @@ This is a classicube compiled with clang and with aggressive game optimizations 
   ```bash
    $ CC=clang make -j $(nproc)
   ```
+# FAQ
+**What is "$(nproc)"?**
+
+"$(nproc)" Are the total number of cores on your Machine/PC. Example: My i5-2400 4C/4T
+  ```bash
+  $ echo $(nproc) # Output the total number of cores in the machine
+  Output: 4
+  ```
+
+
 **And enjoy :)**
